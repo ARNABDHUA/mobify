@@ -7,7 +7,7 @@ import Img6 from './phone/ipad-air.jpg'
 import Img7 from './phone/iphone-mini.jpg'
 import Img8 from './phone/iphone-se-4th-gen.jpg'
 import Img9 from './phone/iqoo-12-pro.jpg'
-import Img10 from './phone/iQOO-Neo-9-pro.png'
+
 import Img11 from './phone/samsung-a15.jpg'
 import Img12 from './phone/samsung-galaxy-m53.jpg'
 import Img13 from './phone/Samsung-Galaxy-Note-10.jpg'
@@ -54,7 +54,7 @@ import Img53 from './phone/go.jpg'
 import Img54 from './phone/boat-p.jpg'
 import Img55 from './phone/boat-q.jpg'
 import Img56 from './phone/k1.jpg'
-import Img57 from './phone/k2.png'
+// import Img57 from './phone/k2.png'
 import Img58 from './phone/k3.jpg'
 
 
@@ -134,14 +134,14 @@ export const Data = [
         price: 73000,
     },
 
-    {
-        id:9,
-        name: "iqoo neo 9 pro phone",
-        image: Img10,
-        desc:"iqoo Product",
-        title:"phone",
-        price: 45000,
-    },
+    // {
+    //     id:9,
+    //     name: "iqoo neo 9 pro phone",
+    //     image: Img10,
+    //     desc:"iqoo Product",
+    //     title:"phone",
+    //     price: 45000,
+    // },
 
     {
         id:10,
@@ -511,14 +511,14 @@ export const Data = [
         title:"y",
         price:4700,
     },
-    {
-        id:56,
-        name: "jbl play Speaker",
-        image: Img57,
-        desc:"jbl product",
-        title:"y",
-        price:7000,
-    },
+    // {
+    //     id:56,
+    //     name: "jbl play Speaker",
+    //     image: Img57,
+    //     desc:"jbl product",
+    //     title:"y",
+    //     price:7000,
+    // },
     {
         id:57,
         name: "jbl zap Speaker",
