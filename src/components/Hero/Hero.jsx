@@ -5,6 +5,8 @@ import Image2 from "../../assets/hero/vr.png"
 import Image3 from "../../assets/hero/mac.png"
 import Image4 from "../../assets/hero/i-15.png"
 import Button from '../Shared/Button'
+
+import { useNavigate } from 'react-router-dom';
 const HeroData=[
     {
         id:1,
@@ -12,8 +14,8 @@ const HeroData=[
         subtitle:"A16 Bionic chip",
         title:"Face Id",
         title2:"Phone",
-        description: "Best Phone ever in the India"
-
+        description: "Best Phone ever in the India",
+        path:"/phone"
     },
     {
         id:2,
@@ -21,8 +23,8 @@ const HeroData=[
         subtitle:"Beats Solo",
         title:"Wireless",
         title2:"Headphone",
-        description: "Best headphone ever in the India"
-
+        description: "Best headphone ever in the India",
+        path:"/headphone"
     },
     {
         id:3,
@@ -30,7 +32,8 @@ const HeroData=[
         subtitle:"Beats Solo",
         title:"Wireless",
         title2:"Virtual",
-        description: "Best VR ever in the India"
+        description: "Best VR ever in the India",
+        path:"/vr"
 
     },
     {
@@ -39,12 +42,15 @@ const HeroData=[
         subtitle:"4K Display",
         title:"Branded",
         title2:"Laptops",
-        description: "Best headphone ever in the India"
+        description: "Best headphone ever in the India",
+        path:"/laptop"
 
     }
 ]
 
 const Hero = ({handleOrderPopup}) => {
+    const navigate= useNavigate();
+
     const settings={
         dots: true,
         arrows:false,
@@ -72,11 +78,12 @@ const Hero = ({handleOrderPopup}) => {
                         <h1 data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className=' text-5xl sm:text-6xl lg:text-7xl font-bold sm:p-10 '>{data.title}</h1>
                         <h1 data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-4xl uppercase text-white dark:text-white/5 sm:text-[80px] md:text-[80px] xl:text-[150px] font-bold'>{data.title2}</h1>
                         <div data-aos="fade-up" data-aos-offset="0" data-aos-duration="500" data-aos-delay="300" className='pt-10 sm:pt-40'>
-                            <Button text="shop now" 
+                            {/* <Button text="shop now" 
                                 bgColor="bg-primary"
                                 textColor="text-white"
-                                handleOrderPopup={handleOrderPopup}
-                            />
+                                onClick={()=> navigate('/phone')} 
+                            /> */}
+                            <button onClick={()=> navigate(data.path)}  className='bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Shop Now</button>
                         </div>
                         </div>
                         {/* img section */}

@@ -3,7 +3,10 @@ import Button from '../Shared/Button'
 import Image1 from '../../assets/category/earphone.png'
 import Image2 from '../../assets/category/watch.png'
 import Image3 from '../../assets/category/macbook.png'
+import { useNavigate } from 'react-router-dom';
+
 const Category = () => {
+    const navigate= useNavigate();
   return (
     <div className='py-8'>
         <div className=' container'>
@@ -15,9 +18,10 @@ const Category = () => {
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='mb-[2px] text-gray-400'>enjoy</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-2xl font-semibold mb-[2px]'>with</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Earphone</p> 
-                            <Button text="Browse" 
+                            {/* <Button text="Browse" 
                                 bgColor="bg-primary"
-                                textColor="text-white"/>
+                                textColor="text-white"/> */}
+                                <button onClick={()=> navigate('/wired')} className='bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Browse</button>
                         </div>
                     </div>
                     <img src={Image1} alt="" className='w-[320px] absolute bottom-0' />
@@ -29,9 +33,10 @@ const Category = () => {
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='mb-[2px] text-white'>enjoy</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-2xl font-semibold mb-[2px]'>with</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Watch</p> 
-                            <Button text="Browse" 
+                            {/* <Button text="Browse" 
                                 bgColor="bg-white"
-                                textColor="text-brandYellow"/>
+                                textColor="text-brandYellow"/> */}
+                                <button onClick={()=> navigate('/watch')} className='bg-white text-brandYellow cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Browse</button>
                         </div>
                     </div>
                     <img src={Image2} alt="" className='w-[320px] absolute -right-4 top-[10px] lg:top-[20px]' />
@@ -44,9 +49,10 @@ const Category = () => {
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='mb-[2px] text-white'>enjoy</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-2xl font-semibold mb-[2px]'>with</p>
                             <p data-aos="zoom-out" data-aos-duration="500" data-aos-once="true" className='text-4xl xl:text-5xl font-bold opacity-40 mb-2'>Laptop</p> 
-                            <Button text="Browse" 
+                            {/* <Button text="Browse" 
                                 bgColor="bg-white"
-                                textColor="text-primary"/>
+                                textColor="text-primary"/> */}
+                                 <button onClick={()=> navigate('/laptop')} className='bg-white text-primary cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Browse</button>
                         </div>
                     </div>
                     <img src={Image3} alt="" className='w-[170px] sm:w-[250px] absolute -right-0 top-1/2 -translate-y-1/2 ' />

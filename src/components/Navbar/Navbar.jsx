@@ -3,6 +3,9 @@ import {IoMdSearch} from 'react-icons/io'
 import { FaCaretDown,FaCartShopping} from 'react-icons/fa6'
 import DarkMode from '../../../src/components/Navbar/DarkMode'
 import mylogo2 from '../../assets/mylogo2.png'
+import { useState } from 'react'
+
+import { useNavigate } from 'react-router-dom';
 const MenuLinks =[
     {
        id:1,
@@ -43,13 +46,16 @@ const DropdownLinks=[
     }
 ]
 const Navbar = ({handleOrderPopup}) => {
+   
+    const navigate= useNavigate();
+    
   return (
     <>
     <div className='bg-white dark:bg-gray-900 dark:text-white  duration-200  relative z-40'>
         <div className='py-4'>
             <div className='container flex justify-between items-center'>
                 <div className=' flex  items-center gap-4'>
-                    <img src={mylogo2} alt="" className='max-w-24 sm:w-20 hidden xl:block ' />
+                    <img  src={mylogo2} alt="" className='max-w-24 sm:w-20 hidden xl:block ' />
                 <a href="#" className='text-primary font-semibold tracking-widest text-xl uppercase sm:text-3xl'>mobify</a>
                  {/* {manu}    */}
                 <div className='hidden lg:block'>
@@ -92,9 +98,9 @@ const Navbar = ({handleOrderPopup}) => {
             <div className='flex justify-between items-center gap-4'>
                 {/* search bar */}
             <div className=' relative group '>
-            <input type="text" placeholder='Search' autoComplete='none'  
-            className='search-bar'/>
-            <IoMdSearch
+            {/* <input type="text" placeholder='Search' autoComplete='none'  
+            className='search-bar'  onChange={(e)=>{setsearchTerm(e.target.value)}} /> */}
+            <IoMdSearch onClick={()=> navigate('/search')}
             className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200'
             />
             </div>
