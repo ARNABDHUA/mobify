@@ -66,6 +66,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 128000,
+        amount:1,
     },
     {
         id:1,
@@ -74,6 +75,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 70000,
+        amount:1,
     },
     {
         id:2,
@@ -82,6 +84,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 91000,
+        amount:1,
     },
     {
         id:3,
@@ -90,6 +93,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 60000,
+        amount:1,
     },
     {
         id:4,
@@ -98,6 +102,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 45000,
+        amount:1,
     },
     {
         id:5,
@@ -106,6 +111,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 35000,
+        amount:1,
     },
 
 
@@ -116,6 +122,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 125000,
+        amount:1,
     },
     {
         id:7,
@@ -124,6 +131,7 @@ export const Data = [
         desc:"Apple Product",
         title:"phone",
         price: 72000,
+        amount:1,
     },
     {
         id:8,
@@ -132,6 +140,7 @@ export const Data = [
         desc:"iqoo Product",
         title:"phone",
         price: 73000,
+        amount:1,
     },
 
     // {
@@ -150,6 +159,7 @@ export const Data = [
         desc:"samsung Product",
         title:"phone",
         price: 12000,
+        amount:1,
     },
     {
         id:11,
@@ -158,6 +168,7 @@ export const Data = [
         desc:"samsung Product",
         title:"phone",
         price: 9000,
+        amount:1,
     },
     {
         id:12,
@@ -166,6 +177,7 @@ export const Data = [
         desc:"samsung Product",
         title:"phone",
         price: 35000,
+        amount:1,
     },
     {
         id:13,
@@ -174,6 +186,7 @@ export const Data = [
         desc:"samsung Product",
         title:"phone",
         price: 145000,
+        amount:1,
     },
     {
         id:14,
@@ -182,6 +195,7 @@ export const Data = [
         desc:"samsung Product",
         title:"phone",
         price: 125000,
+        amount:1,
     },
     {
         id:15,
@@ -190,6 +204,7 @@ export const Data = [
         desc:"boat Product",
         title:"hhw",
         price: 2000,
+        amount:1,
     },
     {
         id:16,
@@ -198,6 +213,7 @@ export const Data = [
         desc:"Rocky Mountain Product",
         title:"hhw",
         price: 1500,
+        amount:1,
     },
     {
         id:17,
@@ -206,6 +222,7 @@ export const Data = [
         desc:"GP Product",
         title:"hhw",
         price: 1200,
+        amount:1,
     },
     {
         id:18,
@@ -214,6 +231,7 @@ export const Data = [
         desc:"Printed Product",
         title:"hhw",
         price: 1000,
+        amount:1,
     },
     {
         id:19,
@@ -222,6 +240,7 @@ export const Data = [
         desc:"Printed Product",
         title:"hhw",
         price: 5000,
+        amount:1,
     },
     {
         id:20,
@@ -230,6 +249,7 @@ export const Data = [
         desc:"Logitech Product",
         title:"hhw",
         price: 7500,
+        amount:1,
     },
     {
         id:21,
@@ -238,6 +258,7 @@ export const Data = [
         desc:"Apple Product",
         title:"hhw",
         price: 24500,
+        amount:1,
     },
     {
         id:22,
@@ -246,6 +267,7 @@ export const Data = [
         desc:"Apple Product",
         title:"hhw",
         price: 9000,
+        amount:1,
     },
     {
         id:23,
@@ -254,6 +276,7 @@ export const Data = [
         desc:"Apple Product",
         title:"vr",
         price: 210000,
+        amount:1,
     },
     {
         id:24,
@@ -262,6 +285,7 @@ export const Data = [
         desc:"jio Product",
         title:"vr",
         price: 1500,
+        amount:1,
     },
     {
         id:25,
@@ -270,6 +294,7 @@ export const Data = [
         desc:"Napto Product",
         title:"vr",
         price: 2000,
+        amount:1,
     },
     {
         id:26,
@@ -278,6 +303,7 @@ export const Data = [
         desc:"Oculus Product",
         title:"vr",
         price: 3000,
+        amount:1,
     },
     {
         id:27,
@@ -286,6 +312,7 @@ export const Data = [
         desc:"vr.box Product",
         title:"vr",
         price: 2500,
+        amount:1,
     },
     {
         id:28,
@@ -294,6 +321,7 @@ export const Data = [
         desc:"Apple Product",
         title:"lp",
         price: 65000,
+        amount:1,
     },
     {
         id:29,
@@ -302,6 +330,7 @@ export const Data = [
         desc:"Apple Product",
         title:"lp",
         price: 85000,
+        amount:1,
     },
     {
         id:30,
@@ -310,6 +339,7 @@ export const Data = [
         desc:"Lenovo Product",
         title:"lp",
         price: 61000,
+        amount:1,
     },
     {
         id:31,
@@ -318,6 +348,7 @@ export const Data = [
         desc:"Dell Product",
         title:"lp",
         price: 55000,
+        amount:1,
     },
     {
         id:32,
@@ -326,6 +357,7 @@ export const Data = [
         desc:"Asus Product",
         title:"lp",
         price: 65000,
+        amount:1,
     },
     {
         id:33,
@@ -334,6 +366,7 @@ export const Data = [
         desc:"Boat Product",
         title:"wh",
         price:500,
+        amount:1,
     },
     {
         id:34,
@@ -342,6 +375,7 @@ export const Data = [
         desc:"Bose Product",
         title:"wh",
         price:450,
+        amount:1,
     },
     {
         id:35,
@@ -350,6 +384,7 @@ export const Data = [
         desc:"realme Product",
         title:"wh",
         price:700,
+        amount:1,
     },
     {
         id:36,
@@ -358,6 +393,7 @@ export const Data = [
         desc:"Sony Product",
         title:"wh",
         price:2500,
+        amount:1,
     },
     {
         id:37,
@@ -366,6 +402,7 @@ export const Data = [
         desc:"xo Product",
         title:"wh",
         price:200,
+        amount:1,
     },
     {
         id:38,
@@ -374,6 +411,7 @@ export const Data = [
         desc:"Zap Product",
         title:"wh",
         price:300,
+        amount:1,
     },
     {
         id:39,
@@ -382,6 +420,7 @@ export const Data = [
         desc:"Apple Product",
         title:"a",
         price:30000,
+        amount:1,
     },
     {
         id:40,
@@ -390,6 +429,7 @@ export const Data = [
         desc:"Apple Product",
         title:"a",
         price:35000,
+        amount:1,
     },
     {
         id:41,
@@ -398,6 +438,7 @@ export const Data = [
         desc:"Noise Product",
         title:"a",
         price:4600,
+        amount:1,
     },
     {
         id:42,
@@ -406,6 +447,7 @@ export const Data = [
         desc:"Realme Product",
         title:"a",
         price:3500,
+        amount:1,
     },
     {
         id:43,
@@ -414,6 +456,7 @@ export const Data = [
         desc:"Govo Product",
         title:"a",
         price:4000,
+        amount:1,
     },
     {
         id:44,
@@ -422,6 +465,7 @@ export const Data = [
         desc:"Kima Product",
         title:"a",
         price:2500,
+        amount:1,
     },
     {
         id:45,
@@ -430,6 +474,7 @@ export const Data = [
         desc:"Appilo Product",
         title:"a",
         price:3000,
+        amount:1,
     },
     {
         id:46,
@@ -438,6 +483,7 @@ export const Data = [
         desc:"PlayStation",
         title:"x",
         price:50000,
+        amount:1,
     },
     {
         id:47,
@@ -446,6 +492,7 @@ export const Data = [
         desc:"PlayStation",
         title:"x",
         price:40000,
+        amount:1,
     },
     {
         id:48,
@@ -454,6 +501,7 @@ export const Data = [
         desc:"PlayStation",
         title:"x",
         price:35000,
+        amount:1,
     },
     {
         id:49,
@@ -462,6 +510,7 @@ export const Data = [
         desc:"PlayStation",
         title:"x",
         price:35000,
+        amount:1,
     },
     {
         id:50,
@@ -470,6 +519,7 @@ export const Data = [
         desc:"PlayStation",
         title:"x",
         price:50000,
+        amount:1,
     },
     {
         id:51,
@@ -478,6 +528,7 @@ export const Data = [
         desc:"jbl product",
         title:"y",
         price:2000,
+        amount:1,
     },
     {
         id:52,
@@ -486,6 +537,7 @@ export const Data = [
         desc:"jbl product",
         title:"y",
         price:1700,
+        amount:1,
     },
     {
         id:53,
@@ -494,6 +546,7 @@ export const Data = [
         desc:"Boat product",
         title:"y",
         price:4000,
+        amount:1,
     },
     {
         id:54,
@@ -502,6 +555,7 @@ export const Data = [
         desc:"boat product",
         title:"y",
         price:4500,
+        amount:1,
     },
     {
         id:55,
@@ -510,6 +564,7 @@ export const Data = [
         desc:"jbl product",
         title:"y",
         price:4700,
+        amount:1,
     },
     // {
     //     id:56,
@@ -526,6 +581,7 @@ export const Data = [
         desc:"jbl product",
         title:"y",
         price:5700,
+        amount:1,
     },
 
 ]

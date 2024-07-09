@@ -17,15 +17,51 @@ import Popup from "./components/Popup/Popup.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Display from "./Display/Display";
-
+import { useState } from "react";
+import Cart from "./Display/Cart";
 
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
 
-  const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup);
-  };
+  // const handleOrderPopup = () => {
+  //   setOrderPopup(!orderPopup);
+  // };
+  const[show,setShow]=useState(true)
+  const [warning,setWarning]=useState(false)
+  const [cart,setCart]=useState([])
+ const handleClick=(item)=>{
+  let isPresent=false;
+  cart.forEach((product)=>{
+    if(product.id===item.id)
+    isPresent=true;
+    })
+    if (isPresent){
+      setWarning(true)
+      setTimeout(()=>{
+        setWarning(false)
+      },2000)
+      return ;
+    }
+    
+    setCart([...cart,item])
+ }
+
+  // const handleChange=(item,d)=>{
+  // let ind=-1;
+  // console.log(item,d);
+  // cart.forEach((data,index)=>{
+  //   if(data.id===item.id)
+  //   ind=index;
+  // });
+  //  const tempArr=cart;
+  //  tempArr[ind] += d;
+
+  //  if(tempArr[ind].amount===0)
+  //  tempArr[ind].amount=1;
+  //  setCart([...tempArr])
+  // }
+
 
   React.useEffect(() => {
     AOS.init({
@@ -38,10 +74,17 @@ const App = () => {
   }, []);
 
   return (
+    <React.Fragment>
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden no-scrollbar">
-      <Navbar handleOrderPopup={handleOrderPopup} />
-     <Display/>
+      <Navbar size={cart.length} setShow={setShow} />{
+        show ?<Display handleClick={handleClick}/>:<Cart  cart={cart} setCart={setCart}  />
+      }
+     
+     {
+      warning && <div className="h-[80px] sm:h-[70px] w-[250px] sm:w-[300px] fixed rounded-2xl right-10 top-[20%] text-white bg-red-400 font-semibold p-5"> Item is already added to your cart</div>
+     }
     </div>
+    </React.Fragment>
   );
 };
 

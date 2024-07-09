@@ -3,7 +3,7 @@ import {IoMdSearch} from 'react-icons/io'
 import { FaCaretDown,FaCartShopping} from 'react-icons/fa6'
 import DarkMode from '../../../src/components/Navbar/DarkMode'
 import mylogo2 from '../../assets/mylogo2.png'
-import { useState } from 'react'
+
 
 import { useNavigate } from 'react-router-dom';
 const MenuLinks =[
@@ -45,10 +45,13 @@ const DropdownLinks=[
         link:"/#",
     }
 ]
-const Navbar = ({handleOrderPopup}) => {
+const Navbar = ({size,setShow}) => {
    
     const navigate= useNavigate();
-    
+    const home=()=>{
+        navigate("/")
+        setShow(true)
+    }
   return (
     <>
     <div className='bg-white dark:bg-gray-900 dark:text-white  duration-200  relative z-40'>
@@ -56,7 +59,7 @@ const Navbar = ({handleOrderPopup}) => {
             <div className='container flex justify-between items-center'>
                 <div className=' flex  items-center gap-4'>
                     <img  src={mylogo2} alt="" className='max-w-24 sm:w-20 hidden xl:block ' />
-                <a href="#" className='text-primary font-semibold tracking-widest text-xl uppercase sm:text-3xl'>mobify</a>
+                <a href="/" onClick={()=>home} className='text-primary font-semibold tracking-widest text-xl uppercase sm:text-3xl'>mobify</a>
                  {/* {manu}    */}
                 <div className='hidden lg:block'>
                     <ul className='flex items-center gap-4'>
@@ -105,10 +108,10 @@ const Navbar = ({handleOrderPopup}) => {
             />
             </div>
             {/* order button */}
-                <button className=' relative p-3' onClick={handleOrderPopup}>
+                <button className=' relative p-3' onClick={()=>setShow(false)}>
                     <FaCartShopping className=' text-xl text-gray-600 dark:text-gray-400' />
                     <div className='w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs'>
-                       4 {/* 4 dinamicaly change */}
+                       {size} {/* 4 dinamicaly change */}
                     </div>
                 </button>
 

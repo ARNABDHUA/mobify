@@ -10,20 +10,20 @@ import Wired from './Wired'
 import Watch from './Watch'
 import Ps from './Ps'
 import Speaker from './Speaker'
-const Display = () => {
+const Display = ({handleClick}) => {
   return (
     <div>
         <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/phone' element={<Phone />} />
-        <Route path='/headphone' element={<Headphone />} />
-        <Route path='/vr' element={<Vr />} />
-        <Route path='/laptop' element={<Laptop />} />
-        <Route path='/search' element={<Search />} />
-        <Route path='/wired' element={<Wired />} />
-        <Route path='/watch' element={<Watch />} />
-        <Route path='/ps' element={<Ps />} />
-        <Route path='/speaker' element={<Speaker />} />
+        <Route path='/phone' element={<Phone handleClick={handleClick} />} />
+        <Route path='/headphone' element={<Headphone handleClick={handleClick} />} />
+        <Route path='/vr' element={<Vr handleClick={handleClick} />} />
+        <Route path='/laptop' element={<Laptop handleClick={handleClick}/>} />
+        <Route path='/search' element={<Search handleClick={handleClick} />} />
+        <Route path='/wired' element={<Wired handleClick={handleClick}/>} />
+        <Route path='/watch' element={<Watch handleClick={handleClick} />} />
+        <Route path='/ps' element={<Ps handleClick={handleClick}/>} />
+        <Route path='/speaker' element={<Speaker handleClick={handleClick} />} />
       </Routes>
     </div>
   )

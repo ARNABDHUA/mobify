@@ -1,6 +1,6 @@
 import React from 'react'
 import { Data } from '../assets/appdata/Assets';
-const Laptop = () => {
+const Laptop = ({handleClick}) => {
   return (
     <div>
     <div className='mb-10'>
@@ -21,7 +21,7 @@ const Laptop = () => {
                         <div className=' hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-full w-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200'>
                             {/* <Button text={"Add To Cart"} bgColor={"bg-primary"} textColor={"text-white"}
                             /> */}
-                            <button className='bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Add To Cart </button>
+                            <button onClick={()=>handleClick(data)} className='bg-primary text-white cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full relative z-10'>Add To Cart </button>
                         </div>
                     </div>
                     <div className=' leading-7'>
