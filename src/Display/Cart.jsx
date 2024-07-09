@@ -43,6 +43,9 @@ const handleRemove=(id)=>{
         <span>Total Price Of Your Cart    </span>
         <span className=' text-green-700 dark:text-green-300'>Rs.- {price}</span>
     </div>
+    <div className='flex justify-center pb-10 pt-4'>
+        <button className='bg-red-400  dark:bg-red-200 dark:text-black hover:bg-red-700 dark:hover:bg-green-200 m-1 h-10 sm:h-10 w-14 sm:w-20  text-sm rounded-3xl'>Buy Now</button>
+    </div>
     </article>
   )
 }

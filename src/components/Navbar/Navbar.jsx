@@ -5,12 +5,12 @@ import DarkMode from '../../../src/components/Navbar/DarkMode'
 import mylogo2 from '../../assets/mylogo2.png'
 
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,NavLink } from 'react-router-dom';
 const MenuLinks =[
     {
        id:1,
        name:"Home",
-       link:"/#", 
+       link:'/', 
     },
     {
         id:2,
@@ -48,10 +48,11 @@ const DropdownLinks=[
 const Navbar = ({size,setShow}) => {
    
     const navigate= useNavigate();
-    const home=()=>{
-        navigate("/")
-        setShow(true)
+    const handleSearch=()=>{
+        setShow(true);
+        navigate('/search');
     }
+   
   return (
     <>
     <div className='bg-white dark:bg-gray-900 dark:text-white  duration-200  relative z-40'>
@@ -59,16 +60,16 @@ const Navbar = ({size,setShow}) => {
             <div className='container flex justify-between items-center'>
                 <div className=' flex  items-center gap-4'>
                     <img  src={mylogo2} alt="" className='max-w-24 sm:w-20 hidden xl:block ' />
-                <a href="/" onClick={()=>home} className='text-primary font-semibold tracking-widest text-xl uppercase sm:text-3xl'>mobify</a>
+                    <NavLink to='/' onClick={()=>setShow(true)} className='text-primary font-semibold tracking-widest text-xl uppercase sm:text-3xl'>mobify</NavLink>
                  {/* {manu}    */}
                 <div className='hidden lg:block'>
                     <ul className='flex items-center gap-4'>
                         {
                         MenuLinks.map((data,index) => (
                             <li key={index}>
-                                <a href={data.link} className=' inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200'>
+                                <NavLink to={data.link} onClick={()=>setShow(true)} className=' inline-block px-4 font-semibold text-gray-500 hover:text-black dark:hover:text-white duration-200'>
                                     {" "}
-                                    {data.name}</a>
+                                    {data.name}</NavLink>
                             </li>
                         ))
                         }
@@ -85,10 +86,10 @@ const Navbar = ({size,setShow}) => {
                                 <ul className=' space-y-2'>
                                     { DropdownLinks.map((data,index)=>(
                                         <li key={index}>
-                                        <a 
+                                        <NavLink to={data.link}
                                         
                                         className='text-gray-500 hover:text-black dark:hover:text-white duration-200 p-2 inline-block w-full hover:bg-primary/20 rounded-md font-semibold '
-                                        href={data.link}>{data.name}</a>
+                                        >{data.name}</NavLink>
                                         </li>
                                     ))}
                                 </ul>
@@ -103,7 +104,7 @@ const Navbar = ({size,setShow}) => {
             <div className=' relative group '>
             {/* <input type="text" placeholder='Search' autoComplete='none'  
             className='search-bar'  onChange={(e)=>{setsearchTerm(e.target.value)}} /> */}
-            <IoMdSearch onClick={()=> navigate('/search')}
+            <IoMdSearch onClick={()=>handleSearch() }
             className='text-xl text-gray-600 group-hover:text-primary dark:text-gray-400 absolute top-1/2 -translate-y-1/2 right-3 duration-200'
             />
             </div>
