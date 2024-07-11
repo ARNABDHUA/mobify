@@ -47,20 +47,28 @@ const App = () => {
     setCart([...cart,item])
  }
 
-  // const handleChange=(item,d)=>{
-  // let ind=-1;
+  const handleChange=(item,d)=>{
+  let ind=-1;
   // console.log(item,d);
-  // cart.forEach((data,index)=>{
-  //   if(data.id===item.id)
-  //   ind=index;
-  // });
-  //  const tempArr=cart;
+  cart.forEach((data,index)=>{
+    if(data.id===item.id){
+      ind=index;
+    }
+  });
+   const tempArr=cart;
   //  tempArr[ind] += d;
-
-  //  if(tempArr[ind].amount===0)
-  //  tempArr[ind].amount=1;
-  //  setCart([...tempArr])
-  // }
+   console.log(tempArr[ind])
+   
+   if(tempArr[ind].amount===0){
+   tempArr[ind].amount=1;
+   setCart([...tempArr])
+   console.log(tempArr[ind])}
+   else{
+    tempArr[ind].amount+=d;
+    setCart([...tempArr])
+    console.log(tempArr[ind])
+   }
+  }
 
 
   React.useEffect(() => {
@@ -77,7 +85,7 @@ const App = () => {
     <React.Fragment>
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden no-scrollbar">
       <Navbar size={cart.length} setShow={setShow} />{
-        show ?<Display handleClick={handleClick}/>:<Cart  cart={cart} setCart={setCart}  />
+        show ?<Display handleClick={handleClick}/>:<Cart  cart={cart} setCart={setCart} handleChange={handleChange}   />
       }
      
      {

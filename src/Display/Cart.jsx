@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Cart = ({cart,setCart}) => {
+const Cart = ({cart,setCart,handleChange}) => {
     const[price,setPrice]=useState(0)
     const handlePrice=()=>{
         let ans=0;
@@ -28,9 +28,9 @@ const handleRemove=(id)=>{
                         <p>{item.name}</p>
                     </div>
                     <div className=' rounded-2xl cursor-pointer flex '>
-                        <button  className='bg-red-400 dark:bg-red-200 m-1 p-0.5 h-10 w-6 sm:w-10 rounded-3xl'>+</button>
+                        <button onClick={()=>handleChange(item,+1)} key={item.id} className='bg-red-400 dark:bg-red-200 m-1 p-0.5 h-10 w-6 sm:w-10 rounded-3xl'>+</button>
                         <button className='bg-orange-500 dark:bg-orange-300 m-1 p-0.5 h-10 w-6 sm:w-10 rounded'>{item.amount}</button>
-                        <button   className='bg-red-400 dark:bg-red-200 m-1 p-0.5 h-10 w-6 sm:w-10 rounded-3xl'>-</button>
+                        <button onClick={()=>handleChange(item,-1)} key={item.id+1} className='bg-red-400 dark:bg-red-200 m-1 p-0.5 h-10 w-6 sm:w-10 rounded-3xl'>-</button>
                     </div>
                     <div className='flex flex-rows'>
                         <span className=' mt-2 sm:mt-4 text-green-700 dark:text-green-300' >{item.price}</span>
