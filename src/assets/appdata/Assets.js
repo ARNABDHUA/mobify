@@ -254,7 +254,7 @@ export const Data = [
     {
         id:21,
         name: "AirPods Max Headphone",
-        image: Img22,
+        image: Img23,
         desc:"Apple Product",
         title:"hhw",
         price: 24500,
@@ -263,7 +263,7 @@ export const Data = [
     {
         id:22,
         name: "EarPods Headphone",
-        image: Img23,
+        image: Img22,
         desc:"Apple Product",
         title:"hhw",
         price: 9000,
@@ -496,7 +496,7 @@ export const Data = [
     },
     {
         id:48,
-        name: "ps4",
+        name: "ps3",
         image: Img49,
         desc:"PlayStation",
         title:"x",
@@ -509,7 +509,7 @@ export const Data = [
         image: Img50,
         desc:"PlayStation",
         title:"x",
-        price:35000,
+        price:33000,
         amount:1,
     },
     {
@@ -518,7 +518,7 @@ export const Data = [
         image: Img51,
         desc:"PlayStation",
         title:"x",
-        price:50000,
+        price:7000,
         amount:1,
     },
     {
