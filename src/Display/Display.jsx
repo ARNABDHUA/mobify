@@ -10,6 +10,7 @@ import Wired from './Wired'
 import Watch from './Watch'
 import Ps from './Ps'
 import Speaker from './Speaker'
+import Login from '../components/login/Login'
 const Display = ({handleClick}) => {
   return (
     <div>
@@ -24,6 +25,7 @@ const Display = ({handleClick}) => {
         <Route path='/watch' element={<Watch handleClick={handleClick} />} />
         <Route path='/ps' element={<Ps handleClick={handleClick}/>} />
         <Route path='/speaker' element={<Speaker handleClick={handleClick} />} />
+        <Route path='/login' element={<Login/>} />
       </Routes>
     </div>
   )

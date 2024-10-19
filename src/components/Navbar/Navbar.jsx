@@ -118,6 +118,9 @@ const Navbar = ({size,setShow}) => {
 
                 {/* dark mode */}
                 <div>
+                    <button className=' rounded-2xl bg-slate-500 text-white dark:text-black dark:bg-slate-100 font-light text-sm p-2' onClick={(e)=>{navigate('/login')}}>LogIn</button>
+                </div>
+                <div className=' hidden sm:block'>
                   <DarkMode /> 
                 </div>
             </div>
